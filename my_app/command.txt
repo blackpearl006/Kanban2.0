@@ -1,0 +1,14 @@
+flask
+flask-sqlalchemy
+flask_wtf
+email-validator
+flask_bcrypt
+flask_login
+flask_restful
+Flask-JWT-Extended
+Flask-Cors
+Flask-Celery
+Flask-SSE
+Flask-Caching
+jinja2
+pandas

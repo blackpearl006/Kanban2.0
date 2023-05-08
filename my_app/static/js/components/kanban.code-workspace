@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "kanban",
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"python.formatting.provider": "black"
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>Pending Tasks for you</h2>
+    <table>
+        <tr>
+            <th>Thread Name</th>
+            <th>Card Data</th>
+            <th>Label</th>
+            <th>Deadline</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.data }}</td>
+            <td>{{ item.label }}</td>
+            <td>{{ item.deadline }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</body>
+</html>

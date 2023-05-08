@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+</head>
+<body>
+    <h3>This is the monthly Report</h3>
+        <h4>All thread Report</h4>
+        <table>
+            <tr>
+                <th>Thread Name</th>
+                <th>Thread description</th>
+            </tr>
+            {% for thread in data %}
+            <tr>
+                <td>{{thread.name}}</td>
+                <td>{{thread.description}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h4>All Card Report</h4>
+
+            {% for thread in data %}
+            <h4>{{thread.name}}</h4>
+            <table>
+                <tr>
+                    <th>Card data</th>
+                    <th>Card label</th>
+                    <th>Card deadline</th>
+                    <th>Card status</th>
+                </tr>
+                {% for s in thread.card_status %}
+                    {% set d = thread.card_data[loop.index-1] %}
+                    {% set l = thread.card_label[loop.index-1] %}
+                    {% set t = thread.card_deadline[loop.index-1] %}
+                <tr>
+                    <td>{{ d }}</td>
+                    <td>{{ l }}</td>
+                    <td>{{ t }}</td>
+                    <td>{{ s }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endfor %}
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</body>
+</html>
+
