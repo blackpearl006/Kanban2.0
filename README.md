@@ -1,4 +1,4 @@
-# Kanban 2.0 App
+# Kanban 2.0 Application
 
 This is a Kanban app developed using Flask framework in Python. The app allows users to record day-to-day life activities as cards, which can be grouped into threads. Users can register and add threads and card values and are provided with a graphical representation of the tasks completed. Users can also manipulate threads and cards by updating or deleting them, or moving a card from one thread to another.
 
