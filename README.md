@@ -5,7 +5,6 @@ This is a Kanban app developed using Flask framework in Python. The app allows u
 ## Author
 
 Ninad Aithal
-21f1006030
 21f1006030@student.onlinedegree.iitm.ac.in
 
 ## Technologies Used
